@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpalace Web Project</title>
+</head>
+<body>
+    <h1>Mindpalace Web Project</h1>
+    <p>El objetivo de esta página web es para documentar los conocimientos sobre el desarrollo Web. Por supuesto la informacion aqui puesta no es como si no existiese en cualquier otro sitio, o como si fuera el único lugar dónde poder ir almacenando conocimiento, por su puesto que no pero lo más necesario es poder plasmarlo en mis propias palabras, ya usaré Obsidian más adelante.</p>
+    <hr>
+    <h2>Objetivos</h2>
+    <ul>
+        <li>Documentar lo que he aprendido.</li>
+        <li>Poder practicar los conceptos aplicandolos en la practica.</li>
+        <li>Que esta web sirva como repositorio de mis conocimientos.</li>
+
+    </ul>
+    <hr>
+    <h2>¿Qué es HTML?</h2>
+    <p>Por sus siglas (Hyper Text Markup Lenguage), es un lenguaje de marcado que sirve para dar sentido y estructura a las páginas web. No es un lenguaje de promación, es un lenguaje de marcado que define la estructura de su contenido. Hypertexto hacer referencia a los diferentes enlaces que conectan las diferentes páginas web una con la otra. Estos enlaces son paste fundamental de la Web. HTML funcina en conjunto con otras herramientas, por ejemplo, <a href="./public/css.html">CSS</a>, que es utlizado para dar el diseño y la apariencia a cualquier web. A su vez, para darle funcionalidad y comportamiento usamos <a href="./public/javascrip.html">JavaScript</a></p>
+    <h2>Antomía de un elemento HTML</h2>
+    <hr>
+    <img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" height="120" alt="Ejemplo de la anatomía de un elemento html">
+    <p>Las partes principales del elemento son:</p>
+    <ol>
+        <li> <strong>Etiqueta de apertura</strong>: consiste en el nombre del elemento, en la imagen (p), encerrado por <strong>paréntesis angulares</strong> de apertura y de cierre. Esta establece desde que punto comienza a tener efecto el elemento selecionado. </li>
+        <li><strong>Etiqueta de cierre</strong>: similar a su contraparte de apertura, con la diferencia que contine una barra de cierre (/) antes del nombre de la etiqueta. Esta marca deja de tener efecto el elemento.</li>
+        <li><strong>Contenido</strong>: es el contenido del elemento, puede ser un párrafo, un enlace a una imagen u otra web, etc.</li>
+        <li><strong>Elemento</strong>: tanto la etiqueta de apertura, la etiqueta de cierre y el contenido, forman o equivalen al elemnto.</li>
+    </ol>
+    <p>Los elementos pueden tener atributos. Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento.</p>
+    <img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png" height="48" alt="Ejemplo de la estructura de un atributo">
+    <p>Un atributo debe tener siempre la siguiente estructura:</p>
+    <ol>
+        <li>Un espacio entre este y la línea del elemento (o del atributo previo, si el elemento ya posee uno).</li>
+        <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+        <li>Comillas de apertura y de cierre, encerrado el valor del atributo. </li>
+    </ol>
+    <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+    <h2>Anidar elementos</h2>
+    <p>Esto significa que se pueden colorcar elementos dentro de otros elementos. A esto se le conoce como <strong>anidamiento.</strong> Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o fuera el uno del otro.</p>
+    <h2>Elementos vacíos</h2>
+    <p>ALgunos elementos no poseen contenido, por eso son llamados <strong>elementos vacíos</strong>. Por ejemplo, el elemnto (img). Posee dos atributos, no posee etiqueta de cierre, ni contenido encerrado. Esto es porque no posee contenido que encerrar, su objetivo o próposito es desplegar una imagen en página HTML.</p>
+    <h2>Anatomía de un Documento HTML</h2>
+    <img src="./assets/images/Captura de Pantalla 2023-10-10 a la(s) 11.30.19 p. m..png" height="175" alt="Ejemplo de la anatomía de un Documento HTML">
+     <p>En la imagen anterior podemos listar:</p>
+     <ol>
+        <li> <strong><"!DOCTYPE html></strong> — el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por ahora, eso es todo lo que necesitas saber.
+        </li>
+        <li><strong>><"html><"/html></strong> — Este elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz (root element).</li>
+        <li><strong><"head><"/head></strong>  — Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.</li>
+        <li><strong><"meta charset="utf-8"></strong> —Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro.</li>
+        <li><strong> <"title><"/title></strong> — Establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</li>
+        <li><strong><"body><"/body></strong>  —Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</li>
+    </ol>
+    <hr>
+    <h2>Imágenes</h2>
+    <img src="./assets/images/Captura de Pantalla 2023-10-11 a la(s) 1.34.04 p. m..png" height="52" alt="Ejemplo del elemento imagen">
+    <p>Esta etiqueta incrusta en el docuemnto una imagen, en la posición en que se escribe. Esto lo hace atravez de un atributo llamado surce abreviado "src" en el cual colocamos la ruta en la que se encuentra la imágen, ya sea en nuesto ordenador, alguna otra página de referencia o en los archivos de nuestra página web. También tiene el atributo "alt" en el cual colocamos una breve descripción de la imágen, esta descripción no es visible en la página web, es unicamente para que personas con discapacidades visuales, que usan lectores de pantallas puedan accesder a esa descripción. Por lo mismo la descripción debe ser clara y significativa</p>
+    <hr>
+    <h2>Marcadores de texto</h2>
+    <h3>Encabezados</h3>
+    <img src="./assets/images/Captura de Pantalla 2023-10-11 a la(s) 1.40.49 p. m..png" height="130" alt="Ejemplo de encabezdos de texto">
+    <p>Los elementos de encabezado permiten especificar que ciertas partes del contenido son encabezados, o subencabezados del contenido. De la misma forma que un libro tiene un título principal, y que a su vez puede tener títulos por cada capítulo individual, y subtítulos dentro de ellos, un documento HTML puede tenerlos también. HTML posee seis niveles de encabezados, van desde "h1-h6". Se debe respetar el orden de cada uno, por ejemplo, no se puede comenzar con el (h2) y luego saltar al (h4) y volver al (h1), deben ser usados en orden jerárquico.  </p>
+    
+    <h3>Párrafos</h3>
+    <img src="./assets/images/Captura de Pantalla 2023-10-11 a la(s) 1.45.57 p. m..png" height="115" alt="Ejemplo de un elento párrafo">
+    <p>Este elemento es utilizado para encerrar párrafos de texto, este es cómunmente utilizado en conjunto de el elemento (br), este último sirve para marcar el fin de una línea y dar un salto a la siguiente. </p>
+    <h3>Listas</h3>
+    <p>Existen dos elementos para crear listas, ya que muchos de los contenidos web, están formados por ellas. Por un lado, tenemoslas listas ordenadas (ol), y las listas que no siguen un orden numerico, las listas desordenadas (ul) unordened list, por sus siglas en inglés. Para añadir items a cualquira de los dos diferentes tipos de lista utilizamos el elemento (li) quiere decir "list item". </p>
+    <p>Las listas son bastantes versátiles, tanto que podemos agregar listas dentro de otras listas, creando así una especie de sublistas tan grande como queramos (respetando en todos los casos el orden de identación)</p>
+    <h3>Vínculos</h3>
+    <p>Los vínculos o enlaces son una parte mu importante, técnicamente, son la base del la Web, para implementarlos se utiliza un elemento simple (a), es la abreviatura de la palabra ancla en inglés (anchor). Este mismo elemento cuenta con un atributo llamado (href) en este se coloca ya sea el directorio de otro elemento html que hayamos creado, o el vínculo a una web que usemos como referencia.</p>
+
+</body>
+</html> 
